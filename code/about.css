@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+}
+
+.a-page1 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.a-heading {
+    position: absolute;
+    z-index: 300;
+    font-size: 4rem;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-shadow: 3px 3px 10px #ffd700;
+}
+
+.a-heroimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+}
+
+.page2 {
+    width: 100%;
+    padding: 50px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.p2left {
+    width: 60%;
+}
+
+.p2left h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.p2left p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.p2left h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.p2right {
+    width: 35%;
+}
+
+.p2right img {
+    width: 100%;
+    height: auto;
+}
+
+/* Media Queries for Responsive Design */
+
+@media (max-width: 768px) {
+    .a-heading {
+        font-size: 3rem;
+        top: 25%;
+    }
+
+    .page2 {
+        flex-direction: column;
+        padding: 30px 15px;
+    }
+
+    .p2left {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .p2left h1 {
+        font-size: 2rem;
+    }
+
+    .p2left p {
+        font-size: 1rem;
+    }
+
+    .p2left h3 {
+        font-size: 1.2rem;
+    }
+
+    .p2right {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .a-heading {
+        font-size: 2rem;
+        top: 80%;
+    }
+
+    .p2left h1 {
+        font-size: 1.8rem;
+    }
+
+    .p2left p {
+        font-size: 0.9rem;
+    }
+
+    .p2left h3 {
+        font-size: 1rem;
+    }
+}
